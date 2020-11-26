@@ -22,6 +22,7 @@ class Enemy(object):
         self.path = [self.x, self.end]
         self.walk_count = 0
         self.vel = 3
+        self.hitbox = (self.x + 20, self.y, 28, 60)
 
     def draw(self, win):
         self.move()
@@ -33,6 +34,9 @@ class Enemy(object):
         else:
             win.blit(walk_left[self.walk_count //3], (self.x, self.y))
             self.walk_count += 1
+        self.hitbox = (self.x+17, self.y+2,31,57)
+        pygame.draw.rect(win,(0,255,0),self.hitbox,2)
+        
 
     def move(self):
         if self.vel > 0:
@@ -47,5 +51,6 @@ class Enemy(object):
             else:
                 self.vel = self.vel * -1
                 self.walk_count = 0
-            
-        
+
+    def hit(self):
+        print('hit')
