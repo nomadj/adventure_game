@@ -1,5 +1,3 @@
-#https://www.youtube.com/watch?v=UdsNBIzsmlI&list=PLzMcBGfZo4-lp3jAExUCewBfMx3UZFkh5&index=3
-
 import os
 import pygame
 pygame.init()
@@ -31,8 +29,6 @@ walk_right = []
 walk_left = []
 bg = pygame.image.load('assets/bg.jpg')
 char = pygame.image.load('assets/standing.png')
-
-import os
 
 assets = os.listdir("assets")
 r = "R"

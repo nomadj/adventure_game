@@ -1,5 +1,3 @@
-#https://www.youtube.com/watch?v=PVY46hUp2EM&list=PLzMcBGfZo4-lp3jAExUCewBfMx3UZFkh5&index=5
-
 import projectiles as proj
 import player
 import os
